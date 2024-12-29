@@ -415,3 +415,19 @@ article .icon{
 .contact-icon{
     cursor:default;
 }
+
+
+/* footer */
+
+footer{
+    height:26vh;
+    margin:0 1rem;
+}
+
+footer p{
+    text-align:center;
+}
+
+.element{
+    margin:1.5rem 0rem;
+}

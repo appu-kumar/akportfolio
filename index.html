@@ -46,11 +46,14 @@
       <div class="section_text_p1">
         <p class="section_text_p1">Hello, I'm</p>
         <h1 class="title">Appu Kumar</h1>
-        <p class="section_text_p2">Software Developer</p>
+        <!-- <p class="section_text_p2">Software Developer</p> -->
+        <div class="element">
+          <span id="element" class="section_text_p2"></span>
+        </div>
         <div class="btn-container">
           <button
             class="btn btn-color-2"
-            onclick="window.open('./assets/bg.png')"
+            onclick="window.open('https://drive.google.com/file/d/1In0TZxqQ4xc-GpkI7B4Gzmh_YHNll9ie/view?usp=sharing')"
           >
             Download CV
           </button>
@@ -110,9 +113,13 @@
 
           <div class="text-container">
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo
-              voluptatum ab repellendus suscipit, totam quidem eum! Dolorum
-              culpa, quam explicabo nisi necessitatibus consequatur eaque,
+              Software Developer with 13 months of experience in designing,
+              developing, and maintaining scalable and efficient software
+              solutions. Proficient in various programming languages including
+              Java, Python, and JavaScript, with expertise in full-stack web
+              development, object-oriented programming (OOP), database
+              management, version control systems (Git), and modern frameworks
+              such as React.js, and Spring Boot.
             </p>
           </div>
         </div>
@@ -275,14 +282,14 @@
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/appu-kumar/mystryMessage'"
+                onclick="location.href='https://github.com/appu-kumar/akportfolio'"
               >
-                MystryMessage
+                Portfolio
               </button>
 
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/appu-kumar/mystryMessage'"
+                onclick="location.href='https://github.com/appu-kumar/akportfolio'"
               >
                 Live Demo
               </button>
@@ -296,14 +303,14 @@
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/appu-kumar/mystryMessage'"
+                onclick="location.href='https://github.com/appu-kumar/TravelManagementSystem'"
               >
-                MystryMessage
+                TMSystem
               </button>
 
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/appu-kumar/mystryMessage'"
+                onclick="location.href='https://github.com/appu-kumar/TravelManagementSystem'"
               >
                 Live Demo
               </button>
@@ -315,40 +322,71 @@
 
     <!--add email png ok-->
     <section id="contact">
-        <p class="section_text_p1">Get In Touch</p>
-        <h1 class="title">Contact Me</h1>
-        <div class="contact-info-upper-container">
-            <div class="contact-info-container">
-                <img 
-                  src="./assets/education.png"
-                  alt="Email icon"
-                  class="icon contact-icon"
-                />
-                <p><a href="mailto:appu6688kumar@gmail.com">appu6688kumar@gmail.com</a></p>
-
-            </div>
-
-            <div class="contact-info-container">
-                <img 
-                  src="./assets/education.png"
-                  alt="contact icon"
-                  class="icon contact-icon"
-                />
-                <p>9354259450</p>
-
-            </div>
-
-            <div class="contact-info-container">
-                <img 
-                  src="./assets/linkedinIcon.png"
-                  alt="Linkedin icon"
-                  class="icon contact-icon"
-                />
-                <p><a href="https://www.linkedin.com/in/appu-kumar-608050218/" target="_blank">LinkedIn</a></p>
-            </div>
+      <p class="section_text_p1">Get In Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/education.png"
+            alt="Email icon"
+            class="icon contact-icon"
+          />
+          <p>
+            <a href="mailto:appu6688kumar@gmail.com">appu6688kumar@gmail.com</a>
+          </p>
         </div>
+
+        <div class="contact-info-container">
+          <img
+            src="./assets/education.png"
+            alt="contact icon"
+            class="icon contact-icon"
+          />
+          <p>9354259450</p>
+        </div>
+
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedinIcon.png"
+            alt="Linkedin icon"
+            class="icon contact-icon"
+          />
+          <p>
+            <a
+              href="https://www.linkedin.com/in/appu-kumar-608050218/"
+              target="_blank"
+              >LinkedIn</a
+            >
+          </p>
+        </div>
+      </div>
     </section>
 
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Appu Kumar. All rights reserved</p>
+    </footer>
+
     <script src="script.js"></script>
+    <!-- Load library from the CDN -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <!-- Setup and start animation! -->
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["Software Developer", "Java Developer", "Frontend Developer"],
+        typeSpeed: 50,
+        loop: true,
+      });
+    </script>
   </body>
 </html>
