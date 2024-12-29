@@ -7,3 +7,13 @@
     }
 }
 
+/* 
+@media screen and (max-width:1200px){
+    #profile{
+        flex-direction: column;
+
+    }
+    .section_pic-container img{
+        width:60vw;
+    }
+} */

@@ -39,42 +39,91 @@
       </div>
     </nav>
 
-
     <section id="profile">
-       <div class="section_pic-container">
-         <img src="./assets/bg.png" alt="Appu Kumar's photo">
-       </div>
-       <div class="section_text_p1">
+      <div class="section_pic-container">
+        <img src="./assets/bg.png" alt="Appu Kumar's photo" />
+      </div>
+      <div class="section_text_p1">
         <p class="section_text_p1">Hello, I'm</p>
         <h1 class="title">Appu Kumar</h1>
         <p class="section_text_p2">Software Developer</p>
         <div class="btn-container">
-            <button class="btn btn-color-2" onclick="window.open('./assets/bg.png')">
-                Download CV
-            </button>
-            <button class="btn btn-color-2" onclick="location.href='./#contact'">
-                Contact Info
-            </button>
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/bg.png')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-2" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
         </div>
-      
-         <div id="socials-container">
-            <img 
+
+        <div id="socials-container">
+          <img
             src="./assets/linkedinIcon.png"
             alt="My Linkedin Profile"
             class="icon"
             onclick="window.open('https://www.linkedin.com/in/appu-kumar-608050218/')"
-            >
-            <img 
+          />
+          <img
             src="./assets/githubIcon.png"
             alt="My Github Profile"
             class="icon"
             onclick="window.open('https://github.com/appu-kumar')"
-            >
-         </div>
-
-       </div>
+          />
+        </div>
+      </div>
     </section>
 
+    <section id="about">
+      <p class="section_text_p1">Get To Know More...</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section_pic-container">
+          <img src="./assets/bg.png" alt="Profile picture" class="about-pic" />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img src="./assets/bg.png" alt="Experience icon" class="icon" />
+              <h3>Experience</h3>
+              <p>
+                1+ year <br />
+                Software Developer
+              </p>
+            </div>
+
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>
+                B.Tech <br />
+                Software Engineering
+              </p>
+            </div>
+          </div>
+
+          <div class="text-container">
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo
+              voluptatum ab repellendus suscipit, totam quidem eum! Dolorum
+              culpa, quam explicabo nisi necessitatibus consequatur eaque,
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+       src="./assets/education.png"
+       alt="arrow icon"
+       class="icon arrow"
+       onclick="location.href='./#experience'"
+      >
+    </section>
     <script src="script.js"></script>
   </body>
 </html>
