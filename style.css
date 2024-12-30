@@ -14,6 +14,13 @@ p {
   color: rgb(85, 85, 85);
 }
 
+
+#desktop-nav{
+    position:sticky;
+    top:0;
+
+}
+
 /*    transition  */
 
 a,
@@ -161,9 +168,13 @@ section{
     display:flex;
     height:400px;
     width:400px;
-    margin:auto 0;
+    margin-right:200px;
+    margin:auto 300px;
 }
 
+.section_pic-container img{
+    border-radius: 50%;
+}
 .section_text{
     align-self:center;
     text-align:center;
@@ -361,6 +372,9 @@ article .icon{
     background:rgb(250,250,250);
 }
 
+.btn-container{
+    margin-top:30px;
+}
 .project-img{
     border-radius:2rem;
     width:90%;
@@ -385,17 +399,17 @@ article .icon{
     display:flex;
     justify-content: center;
     flex-direction:column;
-    height:70vh;
+    height:50vh;
 }
 
 .contact-info-upper-container{
     display:flex;
     justify-content: center;
-    border-radius:2rem;
+    border-radius:1rem;
     border:rgb(53,53,53) 0.1rem solid;
     border-color:rgb(163,163,163);
     background:(250,250,250);
-    margin:2rem auto;
+    margin:1rem auto;
     padding:0.5rem;
 }
 
