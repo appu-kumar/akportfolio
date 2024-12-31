@@ -6,17 +6,22 @@ function toggleMenu(){
 }
 
 
-function downloadResume(e) {
-    e.preventDefault(); // Prevent default navigation
-
-    setTimeout(() => {
-        const link = document.createElement('a');
-        link.href = 'https://drive.google.com/uc?export=download&id=1oJWLArfsjj5hStd_CvNu2ZoGiTbYfI3o';
-        link.download = 'resume.pdf'; // Filename for the downloaded file
-
-        // Append the link to the body, trigger click, and remove it
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
-    }, 1000); // Delay of 1 second
+function downloadAndViewResume(e) {
+    e.preventDefault();
+    
+    // Open for viewing in normal size
+    const viewUrl = 'https://drive.google.com/file/d/1oJWLArfsjj5hStd_CvNu2ZoGiTbYfI3o/view';
+    window.open(viewUrl, '_blank');
+    
+    // For direct download in new tab
+    const downloadUrl = 'https://drive.google.com/uc?id=1oJWLArfsjj5hStd_CvNu2ZoGiTbYfI3o&export=download&confirm=t';
+    const downloadLink = document.createElement('a');
+    downloadLink.href = downloadUrl;
+    downloadLink.target = '_blank'; // This opens in new tab
+    downloadLink.setAttribute('download', 'resume.pdf');
+    document.body.appendChild(downloadLink);
+    downloadLink.click();
+    document.body.removeChild(downloadLink);
 }
+
+

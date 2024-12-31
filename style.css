@@ -18,6 +18,8 @@ p {
 #desktop-nav{
     position:sticky;
     top:0;
+    background-color:rgb(246, 239, 239);
+    z-index: 4;
 
 }
 
