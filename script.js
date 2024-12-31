@@ -10,11 +10,11 @@ function downloadAndViewResume(e) {
     e.preventDefault();
     
     // Open for viewing in normal size
-    const viewUrl = 'https://drive.google.com/file/d/1oJWLArfsjj5hStd_CvNu2ZoGiTbYfI3o/view';
+    const viewUrl = 'https://drive.google.com/file/d/1In0TZxqQ4xc-GpkI7B4Gzmh_YHNll9ie/view?usp=sharing';
     window.open(viewUrl, '_blank');
     
     // For direct download in new tab
-    const downloadUrl = 'https://drive.google.com/uc?id=1oJWLArfsjj5hStd_CvNu2ZoGiTbYfI3o&export=download&confirm=t';
+    const downloadUrl = 'https://drive.google.com/uc?id=1In0TZxqQ4xc-GpkI7B4Gzmh_YHNll9ie&export=download&confirm=t';
     const downloadLink = document.createElement('a');
     downloadLink.href = downloadUrl;
     downloadLink.target = '_blank'; // This opens in new tab
