@@ -12,16 +12,15 @@
       <div class="logo">Appu Kumar</div>
       <div class="links">
         <ul class="nav-links">
+          <li><a href="#">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#experience">Experience</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
           <li>
-            <a
-              href="https://drive.google.com/file/d/1Sa8LivxbESh6kV1tRUWeB-liCfSLagJU/view?usp=sharing"
-              target="_blank"
-              >Resume</a
-            >
+            <a href="#" onclick="downloadAndViewResume(event)" aria-label="Download Resume">
+              Resume
+            </a>
           </li>
         </ul>
       </div>
@@ -41,6 +40,7 @@
             <li><a href="#experience">Experience</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
+            <li><a href="#" onclick="toggleMenu(); downloadAndViewResume(event)" aria-label="Download Resume">Resume</a></li>
           </ul>
         </div>
       </div>
@@ -137,9 +137,9 @@
       > -->
     </section>
 
-    <section id="experience">
+    <section id="skills">
       <p class="section_text_p1">Expore My</p>
-      <h1 class="title">Experience</h1>
+      <h1 class="title">Skills</h1>
       <div class="experience-details-container">
         <div class="about-container">
           <div class="details-container">
@@ -277,6 +277,35 @@
       </div>
     </section>
 
+    <section id="experience">
+      <p class="section_text_p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="work-experience-container">
+        <div class="work-entry">
+          <h3 class="job-role">Software Development Engineer – I</h3>
+          <p class="job-company">GreyTip — Bengaluru, Karnataka</p>
+          <p class="job-duration">February 2025 – Present</p>
+          <ul>
+            <li>Developed a Download Center enabling recruiters to download resumes individually or in bulk, with a 24-hour time limit and a navbar notification.</li>
+            <li>Implemented a selection feature on Job and Candidate pages allowing bulk delete and resume downloads.</li>
+            <li>Developed a comprehensive rating and comment module supporting multiple assessors, including managers and senior leadership.</li>
+            <li>Implemented customer-specific configurations to disable self-assessor ratings and comments when required.</li>
+            <li><strong>Tech Stack:</strong> HTML5, CSS3, JavaScript, Angular, Vue.js, Tailwind</li>
+          </ul>
+        </div>
+        <div class="work-entry">
+          <h3 class="job-role">Software Developer</h3>
+          <p class="job-company">GreyOrange — Gurugram, Haryana</p>
+          <p class="job-duration">January 2022 – February 2023</p>
+          <ul>
+            <li>Collaborated with a team to enhance a high-performance messaging system, improving message delivery efficiency by 1.5%.</li>
+            <li>Conducted code reviews and worked with cross-functional teams to deliver high-quality software solutions.</li>
+            <li><strong>Tech Stack:</strong> Java 8, Core Java, Spring Boot, Tomcat, HTML5, CSS3, JavaScript, SQL, MySQL</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
     <section id="projects">
       <p class="section_text_p1">Browse My Recent</p>
       <h1 class="title">Projects</h1>
@@ -337,7 +366,7 @@
 
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="window.open('https://github.com/appu-kumar/stream-pulse','_blank')"
+                onclick="window.open('https://stream-pulse-5ptj.vercel.app/','_blank')"
               >
                 Live Demo
               </button>
@@ -417,7 +446,7 @@
               </button>
             </div>
           </div>
-          <div class="details-container color-container">
+          <!-- <div class="details-container color-container">
             <div class="article-container">
               <img src="./assets/bg.png" alt="project 3" class="project-img" />
             </div>
@@ -466,7 +495,7 @@
               </button>
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
     </section>
 
@@ -485,24 +514,33 @@
         Github Stats
       </h1>
       <div id="github-stats">
+        <!-- 1️⃣ Profile Overview -->
         <div class="stat-container">
           <img
-            src="https://github-readme-stats.vercel.app/api/top-langs/?username=appu-kumar&theme=dark&hide_border=false&include_all_commits=false&count_private=false&layout=compact"
-            alt="appu-kumar"
+            loading="lazy"
+            src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=appu-kumar&theme=github_dark"
+            alt="GitHub Profile Summary"
           />
         </div>
-        <div class="stat-container">
-          <img
-            src="https://github-readme-stats.vercel.app/api?username=appu-kumar&theme=dark&hide_border=false&include_all_commits=false&count_private=false"
-            alt="appu-kumar"
-          />
-          <img
-            src="https://github-readme-streak-stats.herokuapp.com/?user=appu-kumar&theme=dark&hide_border=false"
-            alt="appu-kumar"
-          />
+
+        <div style="display:flex;">
+            <div class="stat-container">
+              <img
+                loading="lazy"
+                src="https://streak-stats.demolab.com/?user=appu-kumar&theme=dark"
+                alt="GitHub Streak"
+              />
+            </div>
+            <div class="stat-container">
+              <img
+                loading="lazy"
+                src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=appu-kumar&theme=github_dark"
+                alt="Repos Per Language"
+              />
+            </div>
         </div>
       </div>
-    </section>
+   </section>
 
     <style>
       #github-calender-section {
@@ -592,6 +630,7 @@
       <nav>
         <div class="nav-links-container">
           <ul class="nav-links">
+            <li><a href="#">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#experience">Experience</a></li>
             <li><a href="#projects">Projects</a></li>

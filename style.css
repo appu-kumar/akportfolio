@@ -346,6 +346,60 @@ section{
     flex-direction:column;
 }
 
+/* Work experience section styles (compatible with existing design) */
+#work-experience{
+    padding-top:4vh;
+    min-height:fit-content;
+    margin:0 8rem;
+}
+
+.work-experience-container{
+    margin:1.5rem auto 2rem;
+    max-width:1000px;
+    display:flex;
+    flex-direction:column;
+    gap:1.25rem;
+}
+
+.work-entry{
+    background:white;
+    border:1px solid rgb(163,163,163);
+    padding:1rem 1.25rem;
+    border-radius:12px;
+}
+
+.work-entry ul{
+    margin:0.5rem 0 0 1.25rem;
+}
+
+.job-role{
+    margin:0;
+    font-weight:700;
+    color:#222;
+}
+
+.job-company{
+    margin:0.15rem 0 0;
+    color:#555;
+    font-size:0.95rem;
+}
+
+.job-duration{
+    margin:0.25rem 0 0.6rem;
+    font-size:0.9rem;
+    color:#777;
+}
+
+@media (min-width: 900px){
+  .work-experience-container{
+    flex-direction:row;
+    gap:1.5rem;
+  }
+  .work-entry{
+    flex:1;
+  }
+}
+
 .article-container{
    
     display:flex;
