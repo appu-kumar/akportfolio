@@ -15,7 +15,8 @@ function downloadAndViewResume(e) {
     
     // For direct download in new tab
     // const downloadUrl = 'https://drive.google.com/uc?id=1In0TZxqQ4xc-GpkI7B4Gzmh_YHNll9ie&export=download&confirm=t';
-    const downloadUrl = "https://drive.google.com/uc?export=download&id=1n_uUXej_Tsrsf62a9_GX9Rm2gqgv6UK5";
+const downloadUrl =
+    "https://drive.google.com/uc?export=download&id=1I5o4kZzfbK8FcGLEukrBkfmv6-Bfeh8V";   
     const downloadLink = document.createElement('a');
     downloadLink.href = downloadUrl;
     downloadLink.target = '_blank'; // This opens in new tab
