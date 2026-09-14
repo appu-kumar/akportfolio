@@ -10,7 +10,8 @@ function downloadAndViewResume(e) {
     e.preventDefault();
     
     // Open for viewing in normal size
-    const viewUrl = 'https://drive.google.com/file/d/1n_uUXej_Tsrsf62a9_GX9Rm2gqgv6UK5/view?usp=sharing';
+        const viewUrl =
+        'https://drive.google.com/file/d/1I5o4kZzfbK8FcGLEukrBkfmv6-Bfeh8V/view?usp=sharing';
     window.open(viewUrl, '_blank');
     
     // For direct download in new tab
